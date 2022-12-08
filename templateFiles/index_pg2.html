@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='/staticFiles/main.css' />
+  </head>
+  <body>
+    <h1>Attendance Marked Successfully</h1>
+    <p>View From Show List Button</p>
+
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" id="myFile" name="uploaded-file" accept=".png">
+        <input type="submit" value="Submit">
+    </form>
+  <br>
+  <p style="color:green;">Attendance marked for given image</p>
+  <form action="/show_list" target="_blank">
+        <input type="submit" value="Show List" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href='/staticFiles/main.css' />
+  </head>
+  <body>
+    <h1>Attendance Application</h1>
+    <p>Put image below</p>
+
+    <form method="POST" enctype="multipart/form-data" action="/take_attendance">
+        <input type="file" id="myFile" name="uploaded-file" accept=".jpg">
+        <input type="submit" value="Mark Attendance">
+    </form>
+    <br>
+    <form method="POST" enctype="multipart/form-data" action="/register_face">
+        <input type="file" id="myFile2" name="uploaded-file2" accept=".jpg">
+        <input type="submit" value="Register Face">
+    </form>
+  <br>
+  <p style="color:blue;">Choose image file to upload</p>
+  <form action="/show_list" target="_blank">
+        <input type="submit" value="Show List" />
+    </form>
+  </body>
+</html>
